@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System; 
-using System.Data; 
+using System.Data;
+using Excel;
 using System.Data.Odbc; 
 public class excelReader : MonoBehaviour {
 
+	public FileManager fileManager;
 	// Use this for initialization
 	void Start () {
-		readXLS(Application.dataPath + "/Book1.xls");
+		//readXLS(Application.dataPath + "/Book1.xls");
 	}
 
 	// Update is called once per frame
@@ -18,7 +20,7 @@ public class excelReader : MonoBehaviour {
 	void readXLS( string filetoread)
 	{
 		// Must be saved as excel 2003 workbook, not 2007, mono issue really
-		string con = "Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; Dbq="+filetoread+";";
+		string con = "Driver={Microsoft Excel Driver (*.xlsx)}; DriverId=790; Dbq="+filetoread+";";
 		Debug.Log(con);
 		string yourQuery = "SELECT * FROM [Sheet1$]"; 
 		// our odbc connector 
@@ -53,4 +55,9 @@ public class excelReader : MonoBehaviour {
 			} 
 		} 
 	}
+	public void ReadFile()
+	{
+		readXLS (fileManager.filePaths [0]);
+	}
+
 }
