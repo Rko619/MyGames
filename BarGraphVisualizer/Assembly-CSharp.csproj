@@ -51,9 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\excelReader.cs" />
-     <Compile Include="Assets\Scripts\OpenFilePanelExample.cs" />
-     <Compile Include="Assets\Scripts\OpenInFileBrowser.cs" />
+     <Compile Include="Assets\_scripts\BarGraphManager.cs" />
+     <Compile Include="Assets\_scripts\excelReader.cs" />
+     <Compile Include="Assets\_scripts\OpenFilePanelExample.cs" />
+     <Compile Include="Assets\_scripts\OpenInFileBrowser.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -75,11 +76,11 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
- <Reference Include="System.EnterpriseServices">
- <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/System.EnterpriseServices.dll</HintPath>
- </Reference>
  <Reference Include="System.Data">
  <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.EnterpriseServices">
+ <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/System.EnterpriseServices.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
