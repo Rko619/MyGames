@@ -55,6 +55,7 @@
      <Compile Include="Assets\_scripts\excelReader.cs" />
      <Compile Include="Assets\_scripts\OpenFilePanelExample.cs" />
      <Compile Include="Assets\_scripts\OpenInFileBrowser.cs" />
+     <Compile Include="Assets\_scripts\vfsdgs.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
