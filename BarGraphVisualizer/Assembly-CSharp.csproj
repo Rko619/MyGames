@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ExcelService\ExcelService.cs" />
+     <Compile Include="Assets\ExcelService\IExcelService.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
@@ -58,6 +60,7 @@
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
      <Compile Include="Assets\_scripts\BarGraphManager.cs" />
      <Compile Include="Assets\_scripts\FileManager.cs" />
+     <Compile Include="Assets\_scripts\Test.cs" />
      <Compile Include="Assets\_scripts\excelReader.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -94,6 +97,15 @@
  </Reference>
  <Reference Include="System.Windows.Forms">
  <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
+ </Reference>
+ <Reference Include="EPPlus">
+ <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/ExcelService/EPPlus.dll</HintPath>
+ </Reference>
+ <Reference Include="Excel">
+ <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/ExcelService/Excel.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>C:/Users/Metarvrse - 3/Documents/GitHub/MyGames/BarGraphVisualizer/Assets/ExcelService/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
