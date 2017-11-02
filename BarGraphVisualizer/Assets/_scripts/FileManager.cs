@@ -23,7 +23,7 @@ public class FileManager : MonoBehaviour {
 
 	public void OpenFile()
 	{
-		filePaths = StandaloneFileBrowser.OpenFilePanel ("Open Excel Sheet","", "xlsx", false);
+		filePaths = StandaloneFileBrowser.OpenFilePanel ("Open Excel Sheet","", "xls", false);
 		if (filePaths.Length > 0)
 			fileLocationText.text = filePaths [0];
 		else

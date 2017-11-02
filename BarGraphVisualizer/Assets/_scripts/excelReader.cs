@@ -20,8 +20,7 @@ public class excelReader : MonoBehaviour {
 	void readXLS( string filetoread)
 	{
 		// Must be saved as excel 2003 workbook, not 2007, mono issue really
-		string con = "Driver={Microsoft Excel Driver (*.xlsx)}; DriverId=790; Dbq="+filetoread+";";
-		Debug.Log(con);
+		string con = "Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; Dbq="+filetoread+";";
 		string yourQuery = "SELECT * FROM [Sheet1$]"; 
 		// our odbc connector 
 		OdbcConnection oCon = new OdbcConnection(con); 
